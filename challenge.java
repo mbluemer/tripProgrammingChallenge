@@ -83,6 +83,6 @@ class Worker {
 class JobComparator implements Comparator<Job> {
   @Override
   public int compare(Job x, Job y) {
-    return x.priority - y.priority;
+    return y.priority - x.priority;
   }
 }
